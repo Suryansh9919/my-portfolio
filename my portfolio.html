@@ -1,8 +1,9 @@
-<html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Suryansh Rai, BCA student from Gorakhpur specializing in web development, programming, and software engineering.">
     <title>Suryansh Rai - Portfolio</title>
     <style>
         /* General Styling */
@@ -11,6 +12,7 @@
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            color: #333;
         }
         .container {
             max-width: 900px;
@@ -32,7 +34,7 @@
             font-weight: bold;
             color: #007BFF;
         }
-        .section {
+        section {
             margin-bottom: 30px;
             padding: 20px;
             background: #fff;
@@ -49,21 +51,50 @@
             padding: 10px;
             border-radius: 5px;
         }
-        /* Responsive Navigation */
-        .nav {
+        /* Navigation */
+        nav {
             background: #007BFF;
             padding: 10px;
             text-align: center;
         }
-        .nav a {
+        nav a {
             color: white;
             text-decoration: none;
             padding: 10px 15px;
             display: inline-block;
         }
-        .nav a:hover {
+        nav a:hover, nav a:focus {
             background: #0056b3;
             border-radius: 5px;
+            outline: 2px solid #fff;
+        }
+        /* Contact Form Styles */
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover, button:focus {
+            background: #0056b3;
         }
         /* Responsive */
         @media (max-width: 768px) {
@@ -75,25 +106,27 @@
 </head>
 <body>
 
-    <!-- Navigation -->
-    <div class="nav">
-        <a href="#about">About Me</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </div>
+    <!-- Header & Navigation -->
+    <header>
+        <nav aria-label="Main Navigation">
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <div class="container">
+    <main class="container">
         
         <!-- About Me -->
-        <div id="about" class="section">
+        <section id="about">
             <h2>About Me</h2>
             <p>Hello! I am <span class="highlight">Suryansh Rai</span>, a passionate BCA student from Gorakhpur, Uttar Pradesh. I have a keen interest in programming, web development, and exploring new technologies. I love solving real-world problems using code.</p>
-        </div>
+        </section>
 
         <!-- Education -->
-        <div id="education" class="section">
+        <section id="education">
             <h2>Education</h2>
             <ul>
                 <li><span class="highlight">BCA:</span> Bachelor of Computer Applications</li>
@@ -101,32 +134,52 @@
                 <li><span class="highlight">12th:</span> 63% - Don Bosco Sr. Secondary School (CBSE)</li>
                 <li><span class="highlight">Subjects:</span> Mathematics, Physics, Chemistry, English, Physical Education</li>
             </ul>
-        </div>
+        </section>
 
         <!-- Projects -->
-        <div id="projects" class="section">
+        <section id="projects">
             <h2>Projects</h2>
             <ul>
                 <li><span class="highlight">Portfolio Website:</span> A responsive website showcasing my skills and projects.</li>
                 <li><span class="highlight">To-Do List:</span> A simple to-do list app using HTML, CSS, and JavaScript.</li>
             </ul>
-        </div>
+        </section>
 
         <!-- Skills -->
-        <div id="skills" class="section">
+        <section id="skills">
             <h2>Skills</h2>
             <ul>
                 <li>HTML, CSS, JavaScript</li>
                 <li>C Programming</li>
             </ul>
-        </div>
+        </section>
 
-        <!-- Contact -->
-        <div id="contact" class="section">
+        <!-- Contact Form -->
+        <section id="contact">
             <h2>Contact Me</h2>
             <p><span class="highlight">Email:</span> raisuryansh@gmail.com</p>
-        </div>
+            <form action="#" method="POST" aria-label="Contact Form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Type your message here"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
 
-    </div>
+    </main>
+
+    <footer>
+        <p style="text-align: center; font-size: 14px; color: #777;">&copy; 2026 Suryansh Rai. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
