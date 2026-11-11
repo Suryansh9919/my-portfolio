@@ -1,112 +1,248 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Suryansh Rai, BCA student from Gorakhpur specializing in web development, programming, and software engineering.">
-    <title>Suryansh Rai - Portfolio</title>
+
+    <meta name="description" content="Suryansh Rai's personal portfolio. BCA student from Gorakhpur, interested in web development, programming, and software engineering.">
+
+    <meta name="author" content="Suryansh Rai">
+    <meta name="theme-color" content="#0f172a">
+
+    <title>Suryansh Rai | Portfolio</title>
+
     <style>
-        /* General Styling */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+        
+        * {
             margin: 0;
             padding: 0;
-            color: #333;
+            box-sizing: border-box;
         }
-        .container {
-            max-width: 900px;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px auto;
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
         }
-        h1, h2 {
-            text-align: center;
-            color: #007BFF;
-        }
-        p {
-            font-size: 18px;
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #334155;
             line-height: 1.6;
         }
-        .highlight {
-            font-weight: bold;
-            color: #007BFF;
+
+       
+        header {
+            background: #0f172a;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
-        section {
-            margin-bottom: 30px;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            background: #e9ecef;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        /* Navigation */
+
         nav {
-            background: #007BFF;
-            padding: 10px;
-            text-align: center;
+            max-width: 1100px;
+            margin: auto;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
         }
+
         nav a {
             color: white;
             text-decoration: none;
-            padding: 10px 15px;
-            display: inline-block;
+            padding: 9px 15px;
+            border-radius: 6px;
+            font-size: 15px;
+            transition: 0.3s;
         }
-        nav a:hover, nav a:focus {
-            background: #0056b3;
-            border-radius: 5px;
-            outline: 2px solid #fff;
+
+        nav a:hover,
+        nav a:focus-visible {
+            background: #2563eb;
+            outline: none;
         }
-        /* Contact Form Styles */
-        .form-group {
-            margin-bottom: 15px;
+
+       
+        .container {
+            max-width: 1000px;
+            width: 92%;
+            margin: 35px auto;
         }
-        label {
-            display: block;
-            margin-bottom: 5px;
+
+      
+        .hero {
+            background: linear-gradient(135deg, #0f172a, #1e40af);
+            color: white;
+            text-align: center;
+            padding: 65px 20px;
+            border-radius: 14px;
+            margin-bottom: 30px;
+        }
+
+        .hero h1 {
+            font-size: clamp(30px, 5vw, 44px);
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #dbeafe;
+        }
+
+        .hero .subtitle {
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        section h2 {
+            color: #1d4ed8;
+            font-size: 25px;
+            margin-bottom: 18px;
+            border-bottom: 2px solid #dbeafe;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .highlight {
+            color: #2563eb;
             font-weight: bold;
         }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
+
+      
+        ul {
+            list-style: none;
         }
+
+        ul li {
+            background: #f1f5f9;
+            padding: 13px 16px;
+            margin-bottom: 10px;
+            border-radius: 7px;
+            border-left: 4px solid #2563eb;
+        }
+
+    
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+            color: #334155;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 7px;
+            font-size: 15px;
+            font-family: inherit;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: 2px solid #2563eb;
+            border-color: #2563eb;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
         button {
-            background: #007BFF;
+            background: #2563eb;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 12px 25px;
+            border-radius: 7px;
             font-size: 16px;
-            border-radius: 5px;
             cursor: pointer;
+            transition: 0.3s;
         }
-        button:hover, button:focus {
-            background: #0056b3;
+
+        button:hover,
+        button:focus-visible {
+            background: #1e40af;
         }
-        /* Responsive */
-        @media (max-width: 768px) {
+
+        .email-link {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #0f172a;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 22px;
+            margin-top: 35px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav {
+                gap: 3px;
+                padding: 10px 5px;
+            }
+
+            nav a {
+                font-size: 13px;
+                padding: 8px;
+            }
+
             .container {
-                width: 90%;
+                width: 94%;
+                margin: 20px auto;
+            }
+
+            .hero {
+                padding: 45px 15px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            section h2 {
+                font-size: 22px;
             }
         }
     </style>
 </head>
+
 <body>
 
-    <!-- Header & Navigation -->
+    
     <header>
         <nav aria-label="Main Navigation">
             <a href="#about">About Me</a>
@@ -118,68 +254,188 @@
     </header>
 
     <main class="container">
-        
-        <!-- About Me -->
+
+       
+        <div class="hero">
+            <h1>Suryansh Rai</h1>
+            <p>BCA Student | Web Development Enthusiast</p>
+            <p class="subtitle">
+                Passionate about programming, technology and building useful projects.
+            </p>
+        </div>
+
+      
         <section id="about">
             <h2>About Me</h2>
-            <p>Hello! I am <span class="highlight">Suryansh Rai</span>, a passionate BCA student from Gorakhpur, Uttar Pradesh. I have a keen interest in programming, web development, and exploring new technologies. I love solving real-world problems using code.</p>
+
+            <p>
+                Hello! I am <span class="highlight">Suryansh Rai</span>,
+                a passionate BCA student from Gorakhpur, Uttar Pradesh.
+                I have a keen interest in programming, web development,
+                and exploring new technologies. I enjoy solving
+                real-world problems using code and continuously
+                improving my technical skills.
+            </p>
         </section>
 
-        <!-- Education -->
+       
         <section id="education">
             <h2>Education</h2>
+
             <ul>
-                <li><span class="highlight">BCA:</span> Bachelor of Computer Applications</li>
-                <li><span class="highlight">10th:</span> 70% - Little Flower School, GIDA (CBSE)</li>
-                <li><span class="highlight">12th:</span> 63% - Don Bosco Sr. Secondary School (CBSE)</li>
-                <li><span class="highlight">Subjects:</span> Mathematics, Physics, Chemistry, English, Physical Education</li>
+                <li>
+                    <span class="highlight">BCA:</span>
+                    Bachelor of Computer Applications
+                </li>
+
+                <li>
+                    <span class="highlight">10th:</span>
+                    70% - Little Flower School, GIDA (CBSE)
+                </li>
+
+                <li>
+                    <span class="highlight">12th:</span>
+                    63% - Don Bosco Sr. Secondary School (CBSE)
+                </li>
+
+                <li>
+                    <span class="highlight">Subjects:</span>
+                    Mathematics, Physics, Chemistry, English,
+                    Physical Education
+                </li>
             </ul>
         </section>
 
         <!-- Projects -->
         <section id="projects">
-            <h2>Projects</h2>
+            <h2>My Projects</h2>
+
             <ul>
-                <li><span class="highlight">Portfolio Website:</span> A responsive website showcasing my skills and projects.</li>
-                <li><span class="highlight">To-Do List:</span> A simple to-do list app using HTML, CSS, and JavaScript.</li>
+                <li>
+                    <span class="highlight">Portfolio Website:</span>
+                    A responsive personal website showcasing my
+                    skills, education and projects.
+                </li>
+
+                <li>
+                    <span class="highlight">To-Do List:</span>
+                    A simple task management application
+                    developed using HTML, CSS and JavaScript.
+                </li>
             </ul>
         </section>
 
-        <!-- Skills -->
+       
         <section id="skills">
-            <h2>Skills</h2>
+            <h2>Technical Skills</h2>
+
             <ul>
-                <li>HTML, CSS, JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
                 <li>C Programming</li>
             </ul>
         </section>
 
-        <!-- Contact Form -->
+        <!-- Contact -->
         <section id="contact">
             <h2>Contact Me</h2>
-            <p><span class="highlight">Email:</span> raisuryansh@gmail.com</p>
-            <form action="#" method="POST" aria-label="Contact Form">
+
+            <p>
+                <span class="highlight">Email:</span>
+                <a class="email-link"
+                   href="mailto:raisuryansh@gmail.com">
+                    raisuryansh@gmail.com
+                </a>
+            </p>
+
+            <br>
+
+            <form id="contactForm" aria-label="Contact Form">
+
                 <div class="form-group">
                     <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        autocomplete="name"
+                        required>
                 </div>
+
                 <div class="form-group">
                     <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required>
                 </div>
+
                 <div class="form-group">
                     <label for="message">Your Message</label>
-                    <textarea id="message" name="message" rows="4" required placeholder="Type your message here"></textarea>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Type your message here"
+                        required></textarea>
                 </div>
+
                 <button type="submit">Send Message</button>
+
             </form>
         </section>
 
     </main>
 
+  
     <footer>
-        <p style="text-align: center; font-size: 14px; color: #777;">&copy; 2026 Suryansh Rai. All rights reserved.</p>
+        <p>
+            &copy; <span id="year"></span> Suryansh Rai.
+            All rights reserved.
+        </p>
     </footer>
+
+    <script>
+     
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+       
+        document.getElementById("contactForm").addEventListener(
+            "submit",
+            function(event) {
+                event.preventDefault();
+
+                const name = document.getElementById("name").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const message = document.getElementById("message").value.trim();
+
+                if (!name || !email || !message) {
+                    alert("Please fill in all fields.");
+                    return;
+                }
+
+                const subject = encodeURIComponent(
+                    "Portfolio Contact - " + name
+                );
+
+                const body = encodeURIComponent(
+                    "Name: " + name +
+                    "\nEmail: " + email +
+                    "\n\nMessage:\n" + message
+                );
+
+                window.location.href =
+                    "mailto:raisuryansh@gmail.com?subject=" +
+                    subject + "&body=" + body;
+            }
+        );
+    </script>
 
 </body>
 </html>
